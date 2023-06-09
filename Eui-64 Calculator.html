@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>EUI-64 Calculator</title>
+ 
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;800&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+        <style>
+
+        a:hover{
+            text-shadow: 1px 2px 3px;
+        }
+
+        footer{
+            font-family: 'Lato', sans-serif;
+            font-size: small;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin-left: 40px;
+            border: 2px solid #2596be;
+            width: 90%;
+        }
+
+
+        fieldset div{
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            text-indent: 20px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        h1{
+            color: #1A1D4E;
+            font-family: 'Alegreya', serif;
+            text-transform: capitalize;
+            border: 2px dashed #1A1D4E;
+            text-align: center;
+            text-shadow: -9px 1px 7px #1A1D4E;
+            letter-spacing: 0.06em;
+        }
+        td{
+            text-align: center;
+            font-size: 10.5pt;
+            font-family: 'Lato', sans-serif;
+            padding: 1%;
+        }
+
+        h2{
+            color: #2596be;
+            font-family: 'Alegreya', serif;
+            text-transform: capitalize;
+            border: 2px dashed #2596be;
+            text-align: center;
+            text-shadow: 1px 1px 2px #2596be;
+        }
+
+        p{
+            font-family: 'Lato', sans-serif;
+        }
+
+        ol li{
+            line-height: 130%;
+            font-family: 'Lato', sans-serif;
+        }
+
+        a:hover {
+            color: #2596be;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px #2596be;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li{
+            line-height: 150%;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .custom-link:hover {
+            color: pink;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px pink;
+        }
+
+        .custom-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        
+    
+
+
+    </style>
+    </head>
+
+    <!-- header -->
+    <header>
+        <table  style="background-color: #F1F1F1; width:100%;">
+            
+            <tr>
+                <td style="text-align: left; font-size: 12pt;"> <a href="Home Page.html"> <img src="Images/Images_FreeQuiz/logo_minimal.png" alt="logo" height="70"> </td>
+                <td style="font-size: 12pt;"> <a href="Eui-64 Calculator.html">  EUI-64 Calculator </a></td>
+                <td style="font-size: 12pt;"><a href="Free Quiz.html">  Free Quiz </a></td>
+                <td style="font-size: 12pt;"><a href="CCNA Resources.html"> CCNA Resources </a> </td>
+                <td style="font-size: 12pt;"><a href="Motivation.html"> Motivation</a></td>
+                <td style="font-size: 12pt;"><a href="WHOAMI.html"> WHOAMI</a></td>
+        </tr>
+        </table>
+
+            <img src="Images/Images_eui-64 Calculator/BACKGROUND2.png" alt="Motivation" width="100%" height="250">
+            <div style="font-family: 'Lato', sans-serif; 
+            background-color: #F1F1F1; font-weight: 600; color: #1A1D4E; line-height: 3.0; margin-top: -4px;">
+                &nbsp; &nbsp;Home &nbsp;/ &nbsp;EUI-64 Calculator	
+            </div>
+    </header>
+    <br>
+    <br>
+
+
+    <body>
+
+        <br>
+        <br>
+
+        <fieldset>
+                <h1>What is EUI-64 ?</h1>
+
+
+            <div>
+                Before explaining EUI-64, let us take a look at 
+                IPv6 (Internet Protocol version 6). IPv6 was developed to address the limitations of the 
+                previous version, IPv4, which had a limited address space and was running out of available 
+                addresses. Even though there are several solutions that have been developed to help preserve IPv4 
+                addresses, such as <a href="https://datatracker.ietf.org/doc/html/rfc4787" target="_blank"> NAT</a>, <a href="https://datatracker.ietf.org/doc/html/rfc4925" target="_blank">PAT</a>, and <a href="https://datatracker.ietf.org/doc/html/rfc1519" target="_blank">CIDR</a>, the adoption of IPv6 is still necessary
+                 for the long-term sustainability of the Internet.
+
+                IPv6 uses 128-bit addresses, which provides a much larger address space than IPv4 
+                and enables more devices to be connected to the Internet. In IPv6, the first 64 bits of the address
+                 are used to represent the network prefix whereas the last 64 bits are to represent the 
+                 host portion.
+            </div>
+            <br>
+
+            <div>
+                EUI-64 (Extended Unique Identifier) is a technique utilized to enable automatic configuration of IPv6 host addresses. When generating a unique 64-bit interface ID, 
+                an IPv6 device will utilize the MAC address of its interface.
+                Nevertheless, since the MAC address is only 48 bits in length,
+                 there is a shortfall of bits for the interface ID. The question is,
+                  how can we address this shortage in the number of bits?
+                <br>
+                <center>
+                    <img src="Images/Images_eui-64 Calculator/MAC_ID.png" alt="differenceBetweenMAClengthandID">
+                </center>
+            </div>
+             
+            <p>
+                We can follow these steps:
+                <ol>
+                    <li>Divide the MAC address into two equal halves</li>
+                    <li>Add FFFE in the middle </li>
+                    <li>Invert the <a href="https://networkengineering.stackexchange.com/questions/14975/why-is-the-u-l-bit-inversed-in-eui64#:~:text=To%20be%20exactly%20you%20mean,for%20example%2C%20a%20Serial%20interface " class="custom-link" target="_blank">7 <sup >th</sup> bit</a></li>
+                </ol>
+
+                <div>
+                    For instance, 
+                    if the MAC address is 1234.5678.9ABC,    
+                    then the 7 <sup>th</sup> bit is in the second 
+                    hexadecimal character which is (2)<sub>16</sub> so (0010)<sub>2</sub> will become (0000)<sub>2</sub> which is (0)<sub>16</sub>
+                    in hexadecimal. This is what the interface ID will become:
+                </div>
+            
+                <br>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <img src="Images/Images_eui-64 Calculator/euiProcessNew.png" alt="euiProcess">
+                </center>
+                <br>
+
+
+            </p>   
+            
+            <br>
+
+            <h1>Types of IPv6 Addresses</h1>
+            <div>
+
+                There are different types of IPv6 addresses, each serving a specific purpose. Let us take a look at each type and its
+                uses in the following list;
+
+
+                <ul>
+                    <li>Global Unicast
+                        <ul>
+                            <li>Similar to IPv4 public addresses, routable over the internet</li>
+                            <li>Defined in the 2000::/3 block</li>
+                        </ul>
+                    </li>
+
+                    <li>Unique Local
+                        <ul>
+                            <li>Similar to IPv4 private addresses, cannot be used over the internet</li>
+                            <li>Do not have be to be gloabally unique</li>
+                            <li>Defined in the FC00::/7 block</li>
+                        </ul>
+                    </li>
+
+                    <li>Link-local
+                        <ul>
+                            <li>Automatically generated using eui-64</li>
+                            <li>Used for communication over a single link or network segment</li>
+                            <li>Not routable</li>
+                            <li>
+                                Defined in the FE80::/10 block
+                                <ul>
+                                    <li>64 bits to define the network portion</li>
+                                    <li>54 bits after FE80/10 are all zeors</li>
+                                    <li>64 bits to define the host portion using eui-64</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>Multicast Addresses
+                        <ul>
+                            <li>IPv6 is not capable of broadcast</li>
+                            <li>Defined in FF00::/8 block</li>                         
+                        </ul>
+                    </li>
+
+                    <li>Anycast Addresses
+                        <ul>
+                            <li>New feature in IPv6</li>
+                            <li>One-to-one of many or one-to-nearest communication</li> 
+                            <li>Created by assigning the same IPv6 address to multiple interfaces or devices in different locations</li>                        
+                        </ul>
+                    </li>
+
+                    <li>The unspecified address
+                        <ul>
+                            <li>Used to inform routers about the default route</li>
+                            <li>Defined in ::/0</li>                         
+                        </ul>
+                    </li>
+                    <li>The loopback address
+                        <ul>
+                            <li>used to test the NIC card and TCP/IP stack on a device</li>
+                            <li>Defined in ::1</li>                         
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <h1>Demonstration of EUI-64</h1>
+            <br><br>
+            <div>
+
+                <center>
+                    <img  src="Images/Images_eui-64 Calculator/euiExample.jpg" width="400" height="800">
+                </center>
+
+            </div>
+            <br><br>
+
+
+            <h2 style="font-size:200%;">The Calculator</h2>
+
+            <center>
+                <p>
+                    <label>MAC Address:</label> <br><br>
+                    <input id="mac" type="text" placeholder="1234:5678:9ABC" maxlength="14">
+                    <br>
+                    <br>
+                    <label>Host Portion of IPv6:</label> <br><br>
+                    <!--readonly-->
+                    <input id="eui" type="text" style="background-color: #ccc;">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="GO !" onclick="getHostPortion()" style="background-color: #2596be; color: white; width: 70px;">
+                    <script src="JS/EUI-64 Calculator.js"></script>
+                </p>
+
+            </center>
+
+
+        </fieldset>
+    </body>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div style="background-color: #F1F1F1; text-align: left; text-align: justify;
+        padding: 1.0%;">
+
+            <strong style="text-decoration: underline; ">Disclaimer:</strong>
+            Please note that this website is not associated with Cisco Systems,
+            Inc. Its purpose is to provide you assistance with the CCNA certification. <br><br>
+            
+            <center>
+
+                    <div>
+                        <strong style="font-size: 14px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Us:</strong> 
+                        <table cellspacing="8">
+                            <tr>
+
+                                <td><a href="https://www.linkedin.com/in/kamel-qassem-748047275/?originalSubdomain=ae" target="_blank"> <img src="Images/Images_FreeQuiz/linkedin.png" width="40" height="40"></a></td> 
+                                <td><a href="https://www.tiktok.com/@netpassion?lang=en" target="_blank"> <img src="Images/Images_FreeQuiz/tiktok_icon.png" width="30" height="30"></a></td>
+                                <td><a href="mailto:Netpassion.km@hotmail.com"> <img src="Images/Images_FreeQuiz/email_icon.png" width="30" height="30"></a>
+                            </tr>
+                        </table>
+                    </div>  
+
+                        <div>
+                            <em>&copy; 2023 Netpassion.github.io. All rights reserved.</em>
+                        </div>
+                    </center>
+        </div>
+</footer>
+</html>

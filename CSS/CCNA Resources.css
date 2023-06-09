@@ -1,0 +1,63 @@
+footer{
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+}    
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.marginLeftTables{
+    margin-left: 15pt;
+}
+
+h2{
+    color: #2596be;
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    margin-left: 6pt;
+}
+h3{
+    margin-bottom: 0%;
+    color: #1A1D4E;
+    
+}
+
+hr{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+tr, td{
+    text-align: center;
+    font-size: 10.5pt;
+    font-family: 'Lato', sans-serif;
+    padding: 1%;
+}
+.tdText{
+    font-size: 12pt;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 11pt;
+}
+
+
+a:hover {
+        color: #2596be;
+        text-decoration: underline;
+        text-shadow: 2px 2px 5px #2596be;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+

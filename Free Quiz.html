@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Free Quiz</title>
+ 
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;800&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+        <style>
+
+        footer{
+            font-family: 'Lato', sans-serif;
+            font-size: small;
+        }    
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        td{
+            text-align: center;
+            font-size: 10.5pt;
+            font-family: 'Lato', sans-serif;
+            padding: 1%;
+            border-collapse: collapse;
+        }
+        div label{
+            font-size: 10.5pt;
+            font-family: 'Lato', sans-serif;
+        }
+        th{
+            font-family: 'Alegreya', serif;
+            font-size: 110%;
+            background-color: #d0f0fa;
+            border-collapse: collapse;
+
+        }
+        .marginLeftTables{
+            margin-left: 15pt;
+        }
+
+        h3{
+            color: #1A1D4E;
+            font-family: 'Alegreya', serif;
+            font-size: 120%;
+            font-style: normal;
+            margin-left: 6pt;
+        }
+        div input{
+            margin-left: 12pt;
+            font-family: 'Lato', sans-serif;
+            font-size: 12pt;
+        }
+
+        hr{
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            margin-top: 2.5%;
+            border: none;
+            height: 3.5px;
+            background: #d0f0fa;
+        }
+        table{
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+            padding-right: 2px;
+            border-collapse: collapse;
+        }
+        a:hover {
+            color: #2596be;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px #2596be;
+        }
+
+        a{
+            text-decoration: none;
+            color: #1A1D4E;
+        }
+
+
+    </style>
+    </head>
+
+    
+    <header>
+        <table  style="background-color: #F1F1F1; width:100%;">
+            
+            <tr>
+                <td style="text-align: left; font-size: 12pt;"> <a href="Home Page.html"> <img src="Images/Images_FreeQuiz/logo_minimal.png" alt="logo" height="70"> </td>
+                <td style="font-size: 12pt;"> <a href="Eui-64 Calculator.html">  EUI-64 Calculator </a></td>
+                <td style="font-size: 12pt;"><a href="Free Quiz.html">  Free Quiz </a></td>
+                <td style="font-size: 12pt;"><a href="CCNA Resources.html"> CCNA Resources </a> </td>
+                <td style="font-size: 12pt;"><a href="Motivation.html"> Motivation</a></td>
+                <td style="font-size: 12pt;"><a href="WHOAMI.html"> WHOAMI</a></td>
+        </tr>
+        </table>
+
+            <img src="Images/Images_FreeQuiz/Quiz_lassssttt.png" alt="Free Quiz" width="100%" height="250">
+            <div style="font-family: 'Lato', sans-serif; 
+            background-color: #F1F1F1; font-weight: 600; color: #1A1D4E; line-height: 3.0; margin-top: -4px;">
+                &nbsp; &nbsp;Home &nbsp;/ &nbsp;Free Quiz
+            </div>
+    </header>
+
+    <body>
+        
+
+        <br><br>
+        <fieldset style="text-align: center; margin-left: 25%; margin-right: 25%;">
+            
+            Disclaimer: This quiz does not expose the CCNA exam questions .In addition,
+             The real exam is much more comprehensive as includes hands-on labs questions.
+
+        </fieldset>
+        <br>
+
+
+        <h3>
+            Q1: The following table shows various application layer protocols,
+            use the dropdown menu near to each protocol <br>and chose the correct port number;
+        </h3>
+        <br>
+
+        <center>
+
+            <table class="marginLeftTables" border="1">
+        
+                <tr>
+                    <th colspan="5">Application Layer Protocols</th>
+                </tr>
+    
+                <tr>
+                        <th colspan="2" style="padding: 7%; background-color: rgb(252, 225, 229);" >TCP</th>
+                        <th colspan="3" style="padding: 7%; background-color:  rgb(252, 225, 229);">UDP</th>
+                </tr>
+         
+    
+                <tr>
+                    <td >SSH 
+                        <select id="ssh">
+                            <option>--</option>
+                            <option>22</option>
+                            <option>514</option>
+                            <option>25</option>
+                            <option>123</option>
+                            <option>53</option>
+                            <option>161</option>
+                        </select>
+                    </td>
+    
+                    <td >SMTP
+                        <select id="smtp">
+                            <option>--</option>
+                            <option>22</option>
+                            <option>514</option>
+                            <option>25</option>
+                            <option>123</option>
+                            <option>53</option>
+                            <option>161</option>
+                        </select>
+                    </td>
+                    <td >NTP
+                        <select id="ntp">
+                            <option>--</option>
+                            <option>22</option>
+                            <option>514</option>
+                            <option>25</option>
+                            <option>123</option>
+                            <option>53</option>
+                            <option>161</option>
+                        </select>
+                    </td>
+                    <td >SNMP
+                        <select id="snmp">
+                            <option>--</option>
+                            <option>22</option>
+                            <option>514</option>
+                            <option>25</option>
+                            <option>123</option>
+                            <option>53</option>
+                            <option>161</option>
+                        </select>
+                    </td>
+                    <td >Syslog
+                        <select id="syslog">
+                            <option>--</option>
+                            <option>22</option>
+                            <option>514</option>
+                            <option>25</option>
+                            <option>123</option>
+                            <option>53</option>
+                            <option>161</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th colspan="5">TCP & UDP</th>
+                </tr>
+    
+                <tr>
+                        <td style="text-align: center;" colspan="5">  DNS
+                            <select id="dns">
+                                <option>--</option>
+                                <option>22</option>
+                                <option>514</option>
+                                <option>25</option>
+                                <option>123</option>
+                                <option>53</option>
+                                <option>161</option>
+                            </select></td> 
+                </tr>
+            </table>
+
+        </center>
+             
+        <br>
+        <hr>
+        
+            <table  style="margin-right: 30%; margin-left: 5%;" class="marginLeftTables" border="1">
+
+                
+                <h3>
+                    Q2: Which of the following represents the IEEE 802.11 wireless MAC frame ? 
+                </h3>
+                    <input style="position: absolute; margin-left: 2%;" type="radio" name="options">
+
+                <tr >
+                    <td style="width: 5%;">Source Port <br> (2 Bytes)</td>
+                    <td style="width: 5%;"> Destination Port <br> (2 Bytes)</td>
+                </tr>
+
+                <tr>
+                    <td >Length <br> (2 Bytes)</td>
+                    <td > Checksum <br> (2 Bytes)</td>
+                </tr>
+                
+        
+                <tr>
+                    <td  style="text-align: center;" colspan="2">Payload</td>
+                </tr>
+           
+            </table>
+        <br>
+            <table class="marginLeftTables" style="margin-left: 5%;" border="1">
+                
+                <input style="position: absolute; margin-left: 2%;" type="radio" name="options" id="wireless">
+
+                <td>Frame Control</td>
+                <td style="width: 12%;">Duration</td>
+                <td>Address 1</td>
+                <td>Address 2</td>
+                <td>Address 3</td>
+                <td>Sequence Control</td>
+                <td>Address 4</td>
+                <td>Frame Body</td>
+                <td style="width: 10.5%; background-color: rgb(252, 225, 229);">FCS</td>
+            </table>
+        
+            <br>
+            <table class="marginLeftTables" style="margin-left: 5%;" border="1">
+                <input style="position: absolute; margin-left: 2%;" type="radio" name="options">
+                <td style="width: 12%;">Preamble</td>
+                <td style="width: 7%;">SFD</td>
+                <td>Destination Address</td>
+                <td>Source Address</td>
+                <td style="width: 14%;">Type/length</td>
+                <td>Sequence Control</td>
+                <td>Frame Body</td>
+                <td style="width: 7%;background-color: rgb(252, 225, 229);">FCS</td>
+            </table>
+            <hr>
+        
+        <div>
+            <h3>
+                Q3: What is the missing field in the following TCP/IP Encapsulation process ?
+            </h3>
+
+            <table class="marginLeftTables" border="1">
+                <tr>
+                    <td >Payload &nbsp; </td>
+  
+                </tr>
+            </table>
+            
+            <br>
+            <table class="marginLeftTables" border="1">
+                <tr>
+                    <th>Segment Header</th>
+                    <td>Payload &nbsp;</td>
+                </tr>
+            </table>
+            <br>
+            <table class="marginLeftTables" border="1">
+                <tr>
+                    <th>Packet Header</th>
+                    <td>Segment Header</td>
+                    <td style=" padding-top: 5%;">Payload &nbsp;</td>
+                </tr>
+            </table>
+        
+            <br>
+            <table class="marginLeftTables" border="1">
+                <tr>
+                    <th>Frame Header</th>
+                    <td>Packet Header</td>
+                    <td>Segment Header</td>
+                    <td>Payload &nbsp;</td>
+                    <td style="background-color: pink;"><b>???&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                </tr>
+            </table>
+
+            
+        
+            <br>
+            <table class="marginLeftTables" border="1">
+                <tr>
+                    <th>10101010101010101010101010101010101010101010101010101010101010</th>
+                </tr>
+            </table>
+
+
+            <br>
+            <input type="radio" name="tcp" id="fcs"> <label>FCS</label>
+            <Br>
+            <input type="radio" name="tcp"> <label>FTK</label>
+            <br>
+            <input type="radio" name="tcp"> <label>SFD</label>
+            <br>
+            <input type="radio" name="tcp"> <label>DoS</label>
+        </div>
+
+                
+            <hr>
+        
+            <div>
+
+                <h3>
+                    Q4: Which of the following are Cisco Proprietary protocols ? <em style="font-size: 12pt;">(select 2 answers)</em>
+                </h3>
+                <input type="checkbox"> <label>LLDP</label>
+                <br>
+                <input type="checkbox"> <label>RSTP</label>
+                <br>
+                <input type="checkbox" id="cdp"> <label>CDP</label>
+                <br>
+                <input type="checkbox" id="chdlc"> <label>cHDLC</label>
+            </div>
+        
+            
+            <hr>
+            <br>
+        
+            <div>
+                <h3>
+                    Q5: The following table maps SQL CRUD operations to HTTP Verbs,
+                     which HTTP verb you will to
+                     request the deletion of a resource on the server ?
+
+                </h3>
+                <center>
+        
+                    <table class="marginLeftTables" border="1">
+                        <tr>
+                            <th style="padding: 6pt;">SQL</th>
+                            <th style="padding: 6pt;">HTTP</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 6pt;">INSERT</td>
+                            <td style="padding: 6pt;">PUT/POST</td>
+                        </tr>
+        
+                        <tr>
+                            <td style="padding: 6pt;">SELECT</td>
+                            <td style="padding: 6pt;">GET</td>
+                        </tr>
+        
+                        <tr>
+                            <td style="padding: 6pt;">UPDATE</td>
+                            <td style="padding: 6pt;">PUT/PATCH</td>
+                        </tr>
+        
+                        <tr>
+                            <td style="padding: 6pt;">DELETE</td>
+                            <td style="padding: 6pt;">DELETE</td>
+                        </tr>
+                    </table>
+                </center>
+
+                <input type="radio" name="sql"> <label>PUT</label>
+                <Br>
+                <input type="radio" name="sql"> <label>GET</label>
+                <br>
+                <input type="radio" name="sql"> <label>PATCH</label>
+                <br>
+                <input type="radio" name="sql" id="deletesql"> <label>DELETE</label>
+
+        
+            </div>
+
+            <hr>
+
+            <div>
+
+                <h3>
+                    Q6: Syslog is a protocol that used to recordkeep user activity and configuration made to network devices, each syslog
+                    message has a severity level ranging from <br> zero to seven. Which of the following fills the table 
+                    with the correct name of severity level 6 ? <em>(hint: 
+                        
+                        
+                        <span style="color:palevioletred">
+                        E
+                        </span>very 
+                        <span style="color:palevioletred">
+                        A
+                        </span>
+                        wsome 
+                        <span style="color:palevioletred">
+                        C
+                        </span>isco 
+                        <span style="color:palevioletred">
+                        E
+                        </span>ngineer
+                        <span style="color:palevioletred">
+                        W
+                        </span>ill 
+                        
+                        <span style="color:palevioletred">
+                        N
+                        </span>eed 
+                        
+                        <span style="color:palevioletred">
+                        I
+                        </span> 
+                        ce cream
+                        <span style="color:palevioletred">
+                        D
+                        </span> 
+                        aily
+                        )
+                    
+                    
+                    
+                    </em>
+                </h3>
+
+                <center>
+        
+                    <table class="marginLeftTables" border="1" cellpadding="20">
+                        <tr>
+                            <th>Severity Level</th>
+                            <th>Name</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>Emergency</td>
+                        </tr>
+        
+                        <tr>
+                            <td>1</td>
+                            <td>Alert</td>
+                        </tr>
+        
+                        <tr>
+                            <td>2</td>
+                            <td>Critical</td>
+                        </tr>
+        
+                        <tr>
+                            <td>3</td>
+                            <td>Error</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Warning</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Notification</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td style="background-color: pink;"> <b>???</b></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Debug</td>
+                        </tr>
+                    </table>
+
+
+
+
+                </center>
+
+
+                <input type="radio" name="severity"> <label>Dangoerous</label>
+                <Br>
+                <input type="radio" name="severity" id="info"> <label>Informational</label>
+                <br>
+                <input type="radio" name="severity"> <label>Hazardous</label>
+                <br>
+                <input type="radio" name="severity"> <label>Low</label>
+
+
+            </div>
+
+            <div>
+
+                <hr>
+
+                <div>
+    
+                    <h3>
+                        Q7: Using EUI-64, what is the host portion of the following MAC Address:  9925:fb44:77aa ?
+                         <em  style="font-size: 12pt;"> <a href="Eui-64 Calculator.html" target="_blank">(hint)</a></em>
+                        </h3>
+       
+                         <br><br>
+                         <input type="radio" name="eui" id="eui64"> <label>9B25:FBFF:FE44:77AA</label>
+                         <Br>
+                         <input type="radio" name="eui" id="info"> <label>::FBFF:FE44:77AA</label>
+                         <br>
+                         <input type="radio" name="eui"> <label>9C25:FBFF:FE44:77AA</label>
+                         <br>
+                         <input type="radio" name="eui"> <label>Invalid MAC</label>
+                        
+
+            </div>
+
+            
+            <center>
+                <br><br>
+                <input type="submit" onclick="getGrade()" value="Submit" style="background-color: #2596be; color: white; padding: 0.5%;">
+                <script src="JS/Grading of The Quiz.js"></script>
+            </center>
+            <br>
+   
+            </body>
+
+            <br>
+            <footer>
+                <div style="background-color: #F1F1F1; text-align: left; text-align: justify;
+                padding: 1.0%;">
+    
+                    <strong style="text-decoration: underline; ">Disclaimer:</strong>
+                    Please note that this website is not associated with Cisco Systems,
+                    Inc. Its purpose is to provide you assistance with the CCNA certification. <br><br>
+                    
+                    <center>
+    
+                            <div>
+                                <strong style="font-size: 14px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Us:</strong> 
+                                <table cellspacing="8">
+                                    <tr>
+    
+                                        <td><a href="https://www.linkedin.com/in/kamel-qassem-748047275/?originalSubdomain=ae" target="_blank"> <img src="Images/Images_FreeQuiz/linkedin.png" width="40" height="40"></a></td> 
+                                        <td><a href="https://www.tiktok.com/@netpassion?lang=en" target="_blank"> <img src="Images/Images_FreeQuiz/tiktok_icon.png" width="30" height="30"></a></td>
+                                        <td><a href="mailto:Netpassion.km@hotmail.com"> <img src="Images/Images_FreeQuiz/email_icon.png" width="30" height="30"></a>
+                                    </tr>
+                                </table>
+                            </div>  
+    
+                                <div>
+                                    <em>&copy; 2023 Netpassion.github.io. All rights reserved.</em>
+                                </div>
+                            </center>
+                </div>
+        </footer>
+</html>
